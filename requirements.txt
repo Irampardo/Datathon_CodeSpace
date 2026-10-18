@@ -1,0 +1,9 @@
+# Install DBaver (https://dbeaver.io/download/)
+# Install VSCode (https://code.visualstudio.com/download)
+
+jupyter==1.0.0
+numpy==1.26.4
+pandas==2.2.2
+matplotlib==3.9.1
+seaborn==0.13.2
+scikit-learn==1.5.1
