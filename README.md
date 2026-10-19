@@ -22,6 +22,12 @@ The first thing to do will be to create a database of the selling track provided
 #### 1.1.A. Option AWS
 
 1) Create an account in AWS (https://aws.amazon.com/es/rds/) --> 2) Create the bdd in AWS rds (making it public and with no security restriction) --> 3) Install DBeaver (https://dbeaver.io/download/) and connect to the AWS bdd you just created
+Note: If you are going to use a CodeSpace, the IP of the CodeSpace will differ from your local computer IP, thus you need to edit a rule to allow Codespace access to AWS. To check your codespace IP run:
+
+```bash
+curl -s https://checkip.amazonaws.com
+```
+
 
 #### 1.1.B. Option connection to an already created bbdd
 
@@ -42,7 +48,23 @@ The bakery shop provided .xlsx files of the selling track. We will 1) Convert th
 
 #### 1.3.2. Create a branch
 
-In the open CodeSpace in VSCode, create a new branch named as "EDA" where we will perform the first part of the analysis
+In the open CodeSpace in VSCode, create a new branch named as "EDA" where we will perform the first part of the analysis. To set up the environment do:
+
+a) Create a conda environment. Use:
+
+```bash
+conda create -n myenv python=3.14
+
+conda activate myenv
+
+```
+
+b) Install required libraries. Use:
+
+```bash
+pip install -r requirements.txt
+```
+
 
 ## 2. Exploratory Data Analysis
 
@@ -50,23 +72,27 @@ In the open CodeSpace in VSCode, create a new branch named as "EDA" where we wil
 
 ### 2.2. Processing of the datasets
 
-### 2.2.1. Merging of the datasets
-
-### 2.2.2. Connection to a wheather API
+- 2.2.1. Merging of the datasets
+- 2.2.2. Connection to a wheather API
 
 ### 2.3. Analysis of the provided variables
 
-#### 2.3.1. Analysis of categorical variables and codification
-
-#### 2.3.2. Analysis of the numerical variables
-
-#### 2.3.3. Outliers Detection
-
-#### 2.3.4. Scaling
+- 2.3.1. Analysis of categorical variables and codification
+- 2.3.2. Analysis of the numerical variables
+- 2.3.3. Outliers Detection
+- 2.3.4. Scaling
 
 ## 3. Model creation & Evaluation
 
+The idea is to create a model to predict the selling trends of product "3960", so we will do several tests & metrics and use MLflow to track every test
+
+- Test several regression models
+- Test several data spliting proportions
+- Test several hyperparameters
+
 ## 4. Model deployment
+
+Once we have defined the best model, we will register it in MLflow and connect to MLflow using a docker container to deploy our model
 
 ## 5. Dashboard creation
 
