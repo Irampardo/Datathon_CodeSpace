@@ -1,6 +1,6 @@
 # CodeSpace Datathon! 
 This is a repository to upload files related to the final exercise CodeSpace DataScience + IA Master. 
-In this challenge, we will analyze the market performance of a local bakery shop by creating a database with its selling files, track current sales of the best product and deploy a model to predict sales performance
+In this challenge, we will analyze the market performance of a local bakery shop by creating a database with its selling files, track current sales of the best product and deploy a model to predict sales performance of a specific product "3960".
 
 **Languages and Data Science tools**
 
