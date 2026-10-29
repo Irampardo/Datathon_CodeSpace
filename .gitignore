@@ -1,4 +1,10 @@
 # Byte-compiled / optimized / DLL files
+.env
+*.csv
+*.parquet
+mlruns/
+mlartifacts/
+.ipynb_checkpoints/
 __pycache__/
 *.py[codz]
 *$py.class
