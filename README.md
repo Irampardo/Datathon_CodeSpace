@@ -90,6 +90,13 @@ The idea is to create a model to predict the selling trends of product "3960", s
 - Test several data spliting proportions
 - Test several hyperparameters
 
+If you have problems to connect to codespace afte running mlflow erver, try:
+
+
+```bash
+mlflow server --host 127.0.0.1 --port 5000 --workers 1
+```
+
 ## 4. Model deployment
 
 Once we have defined the best model, we will register it in MLflow and connect to MLflow using a docker container to deploy our model
