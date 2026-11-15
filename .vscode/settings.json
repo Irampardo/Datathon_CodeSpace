@@ -1,3 +1,18 @@
 {
-    "python.terminal.useEnvFile": true
+    "python.terminal.useEnvFile": true,
+    "python.analysis.languageServerMode": "light",
+    "python.analysis.indexing": false,
+    "python.analysis.exclude": [
+        "**/Data/**",
+        "**/data/**",
+        "**/mlartifacts/**",
+        "**/served_model/**",
+        "**/outputs/**",
+        "**/.ipynb_checkpoints/**"
+    ],
+    "files.watcherExclude": {
+        "**/Data/**": true,
+        "**/mlartifacts/**": true,
+        "**/served_model/**": true
+    }
 }

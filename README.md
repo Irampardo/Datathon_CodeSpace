@@ -94,8 +94,31 @@ If you have problems to connect to codespace afte running mlflow erver, try:
 
 
 ```bash
-mlflow server --host 127.0.0.1 --port 5000 --workers 1
-```
+mlflow server \
+  --host 127.0.0.1 \
+  --port 5000 \
+  --workers 1
+  ```
+And then, open a second terminal and:
+
+```bash
+export MLFLOW_TRACKING_URI=http://localhost:5000
+
+mlflow artifacts download \
+  -u "models:/bakery_3960_may_pred_SVR/1" \
+  -d ./served_model
+  ```
+
+  Stop the mlflow server, and then, serve the model locally:
+
+  ```bash
+
+mlflow models serve \
+  -m ./served_model \
+  -p 5001 \
+  --env-manager local
+  ```
+
 
 ## 4. Model deployment
 

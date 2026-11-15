@@ -9,6 +9,15 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Jupyter notebooks
+Notebooks/2024*.ipynb
+Notebooks/Datathon_Edition_*.ipynb
+Notebooks/5_Datathon_Data_processing&modelling_finetune.ipynb
+Notebooks/5_Datathon_Data_processing&modelling_finetune_v2.ipynb
+Notebooks/3_Datathon_EDA_old.ipynb
+
+
+
 # C extensions
 *.so
 

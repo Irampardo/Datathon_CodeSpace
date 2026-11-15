@@ -1,2 +1,2 @@
-model_name: bakery_3960sales_pred_SVR
-model_version: '2'
+model_name: bakery_3960_may_pred_SVR
+model_version: '1'
