@@ -1,2 +1,2 @@
-model_name: bakery_3960_may_pred_SVR
+model_name: bakery_3960_may_pred_HisGradBost
 model_version: '1'

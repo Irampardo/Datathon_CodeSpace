@@ -103,16 +103,14 @@ And then, open a second terminal and:
 
 ```bash
 export MLFLOW_TRACKING_URI=http://localhost:5000
-
 mlflow artifacts download \
-  -u "models:/bakery_3960_may_pred_SVR/1" \
+  -u "models:/bakery_3960_may_pred_HisGradBost/1" \
   -d ./served_model
   ```
 
   Stop the mlflow server, and then, serve the model locally:
 
   ```bash
-
 mlflow models serve \
   -m ./served_model \
   -p 5001 \
