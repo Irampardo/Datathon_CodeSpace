@@ -12,8 +12,10 @@ __pycache__/
 # Jupyter notebooks
 Notebooks/2024*.ipynb
 Notebooks/Datathon_Edition_*.ipynb
+Notebooks/5_Datathon_Data_processing&modelling.ipynb
 Notebooks/5_Datathon_Data_processing&modelling_finetune.ipynb
 Notebooks/5_Datathon_Data_processing&modelling_finetune_v2.ipynb
+5_Datathon_SVR_TimeSeriesSplit_new_experiment.ipynb
 Notebooks/3_Datathon_EDA_old.ipynb
 
 
